@@ -140,18 +140,21 @@ body {
 }
 
 .preview-box {
-    background: var(--box-bg);
-    border-radius: var(--radius-box);
+    background: transparent;
+    border-radius: 16px;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    border: 1px solid rgba(0,0,0,0.04);
+    border: 1px solid transparent; /* Invisible border for Ground Truth */
+    transition: transform 0.3s ease;
 }
 
+/* Highlight the entire 'Ours' section like the screenshot */
 .preview-box.ours {
-    background-color: var(--accent-light-blue);
-    border-color: rgba(0, 122, 255, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.4);
+    box-shadow: 0 8px 30px rgba(249, 115, 22, 0.08);
+    transform: scale(1.02); /* Pop out slightly */
 }
 
 .label {
@@ -183,8 +186,8 @@ body {
 }
 
 .ours .media-container {
-    border: 2px solid rgba(249, 115, 22, 0.2); /* Subtle orange ring */
-    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.08); /* Warm glow for our model */
+    border: 1px solid rgba(0,0,0,0.04); /* Match GT video border */
+    box-shadow: none; /* Glow moved to the parent box */
 }
 
 .media-container video {
