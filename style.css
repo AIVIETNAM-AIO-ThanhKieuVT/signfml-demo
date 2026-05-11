@@ -1,14 +1,15 @@
 :root {
-    /* Refined Premium Palette — shifting away from yellow to peach/warm-orange */
-    --primary-peach: #fff1eb; /* Soft Warm Peach */
-    --accent-peach: #ffdcc7; /* Deeper Peach Accent */
-    --accent-blue: #f0f4ff;  /* Very Subtle Lavender/Blue */
-    --accent-orange: #f97316; /* Professional Orange for accents */
+    /* Geometric Slide Palette (Matching Presentation) */
+    --primary-blue: #1e3a8a; /* Deep blue for titles */
+    --accent-blue: #025ca1;  /* HCMUT Blue accent */
+    --poly-light: #f8fafc;
+    --poly-mid: #f1f5f9;
+    --poly-blue: #e0f2fe;
     --bg-white: #ffffff;
-    --text-main: #0f172a;    /* Deep Slate for sharp text */
-    --text-muted: #64748b;
-    --glass-bg: rgba(255, 255, 255, 0.85);
-    --glass-border: rgba(255, 255, 255, 0.5);
+    --text-main: #0f172a;    /* Deep Slate for body text */
+    --text-muted: #475569;
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.6);
     --shadow-premium: 
         0 4px 6px -1px rgba(0, 0, 0, 0.05),
         0 20px 40px -10px rgba(0, 0, 0, 0.1),
@@ -25,11 +26,16 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-main);
     line-height: 1.6;
-    background: 
-        radial-gradient(at 0% 0%, var(--accent-peach) 0%, transparent 40%),
-        radial-gradient(at 100% 0%, var(--accent-blue) 0%, transparent 40%),
-        radial-gradient(at 50% 100%, var(--primary-peach) 0%, transparent 50%),
-        var(--bg-white);
+    background-color: var(--bg-white);
+    background-image: 
+        /* Left edge geometric shards */
+        linear-gradient(120deg, var(--poly-mid) 0%, var(--poly-mid) 12%, transparent 12%),
+        linear-gradient(145deg, var(--poly-blue) 0%, var(--poly-blue) 8%, transparent 8%),
+        linear-gradient(160deg, var(--poly-light) 0%, var(--poly-light) 20%, transparent 20%),
+        /* Right edge geometric shards */
+        linear-gradient(-60deg, var(--poly-mid) 0%, var(--poly-mid) 12%, transparent 12%),
+        linear-gradient(-35deg, var(--poly-blue) 0%, var(--poly-blue) 8%, transparent 8%),
+        linear-gradient(-20deg, var(--poly-light) 0%, var(--poly-light) 20%, transparent 20%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -80,7 +86,8 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 3.8rem;
     font-weight: 700;
-    color: var(--text-main);
+    color: var(--primary-blue);
+
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
 }
@@ -98,8 +105,8 @@ body {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.1rem;
-    color: #3b82f6; /* Sophisticated blue */
-    font-weight: 500;
+    color: var(--accent-blue);
+    font-weight: 600;
     opacity: 0.9;
 }
 
@@ -168,7 +175,7 @@ body {
 }
 
 .ours .label {
-    color: #3b82f6;
+    color: var(--accent-blue);
 }
 
 /* Video container — skeleton should pop */
