@@ -133,8 +133,8 @@ body {
 }
 
 .media-container {
-    aspect-ratio: 16/9;
-    background: #e5e5e5;
+    aspect-ratio: 1/1;
+    background: transparent;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -147,7 +147,7 @@ body {
 .media-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     mix-blend-mode: multiply;
 }
 
