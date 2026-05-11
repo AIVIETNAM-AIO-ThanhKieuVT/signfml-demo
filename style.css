@@ -1,15 +1,18 @@
 :root {
-    /* Premium Color Palette */
-    --primary-peach: #fff5eb;
-    --accent-peach: #ffecd2;
-    --accent-blue: #e0f2fe;
+    /* Refined Premium Palette — shifting away from yellow to peach/warm-orange */
+    --primary-peach: #fff1eb; /* Soft Warm Peach */
+    --accent-peach: #ffdcc7; /* Deeper Peach Accent */
+    --accent-blue: #f0f4ff;  /* Very Subtle Lavender/Blue */
+    --accent-orange: #f97316; /* Professional Orange for accents */
     --bg-white: #ffffff;
-    --text-main: #1a1a1a;
+    --text-main: #0f172a;    /* Deep Slate for sharp text */
     --text-muted: #64748b;
-    --glass-bg: rgba(255, 255, 255, 0.75);
-    --glass-border: rgba(255, 255, 255, 0.4);
-    --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
-    --shadow-premium: 0 20px 60px -15px rgba(0, 0, 0, 0.12), 0 0 40px rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --shadow-premium: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.05),
+        0 20px 40px -10px rgba(0, 0, 0, 0.1),
+        0 40px 80px -20px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -168,14 +171,20 @@ body {
 /* Video container — skeleton should pop */
 .media-container {
     aspect-ratio: 790/820;
-    background: #fdfaf5; /* Extremely light warmth */
+    background: #ffffff; /* Clean white background for best skeleton pop */
     border-radius: 16px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0,0,0,0.03);
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+.ours .media-container {
+    border: 2px solid rgba(249, 115, 22, 0.2); /* Subtle orange ring */
+    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.08); /* Warm glow for our model */
 }
 
 .media-container video {
