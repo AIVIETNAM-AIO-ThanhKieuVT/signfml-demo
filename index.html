@@ -29,7 +29,7 @@
     </header>
 
     <main class="content">
-        <!-- Demo Card 1 -->
+        <!-- #1 — BLEU 1.000, DTW 0.037 (Best overall) -->
         <section class="demo-card animate-up">
             <div class="card-grid">
                 <div class="preview-box">
@@ -61,72 +61,8 @@
             </div>
         </section>
 
-        <!-- Demo Card 2 -->
+        <!-- #2 — BLEU 0.742, DTW 0.005 -->
         <section class="demo-card animate-up delay-1">
-            <div class="card-grid">
-                <div class="preview-box">
-                    <span class="label">GROUND TRUTH</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="videos/rank2_gt.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="preview-box ours">
-                    <span class="label">SIGNFML (OURS)</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="videos/rank2_signfml.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <div class="captions">
-                <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"und nun die wettervorhersage für morgen montag den achtundzwanzigsten november ."</p>
-                </div>
-                <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"And now the weather forecast for tomorrow, Monday the 28th of November."</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Demo Card 3 -->
-        <section class="demo-card animate-up delay-2">
-            <div class="card-grid">
-                <div class="preview-box">
-                    <span class="label">GROUND TRUTH</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="videos/rank3_gt.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="preview-box ours">
-                    <span class="label">SIGNFML (OURS)</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="videos/rank3_signfml.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <div class="captions">
-                <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"am mittwoch breiten sich von nordwesten neue wolken với regen oder schauern aus örtlich sind cũng gewitter dabei ."</p>
-                </div>
-                <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"On Wednesday, new clouds with rain or showers will spread from the northwest; locally there will also be thunderstorms."</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Demo Card 4 — BLEU 0.742, DTW 0.005 -->
-        <section class="demo-card animate-up">
             <div class="card-grid">
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
@@ -157,8 +93,8 @@
             </div>
         </section>
 
-        <!-- Demo Card 5 — BLEU 0.699, DTW 0.004 -->
-        <section class="demo-card animate-up delay-1">
+        <!-- #3 — BLEU 0.699, DTW 0.004 -->
+        <section class="demo-card animate-up delay-2">
             <div class="card-grid">
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
@@ -185,6 +121,70 @@
                 <div class="caption-item">
                     <span class="lang-tag en">EN</span>
                     <p>"And now the weather forecast for tomorrow, Thursday the 3rd of March."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- #4 — BLEU 0.535, DTW 0.032 -->
+        <section class="demo-card animate-up">
+            <div class="card-grid">
+                <div class="preview-box">
+                    <span class="label">GROUND TRUTH</span>
+                    <div class="media-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/rank2_gt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="preview-box ours">
+                    <span class="label">SIGNFML (OURS)</span>
+                    <div class="media-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/rank2_signfml.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="captions">
+                <div class="caption-item">
+                    <span class="lang-tag de">DE</span>
+                    <p>"und nun die wettervorhersage für morgen montag den achtundzwanzigsten november ."</p>
+                </div>
+                <div class="caption-item">
+                    <span class="lang-tag en">EN</span>
+                    <p>"And now the weather forecast for tomorrow, Monday the 28th of November."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- #5 — BLEU 0.028, DTW 0.036 -->
+        <section class="demo-card animate-up delay-1">
+            <div class="card-grid">
+                <div class="preview-box">
+                    <span class="label">GROUND TRUTH</span>
+                    <div class="media-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/rank3_gt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="preview-box ours">
+                    <span class="label">SIGNFML (OURS)</span>
+                    <div class="media-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/rank3_signfml.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="captions">
+                <div class="caption-item">
+                    <span class="lang-tag de">DE</span>
+                    <p>"am mittwoch breiten sich von nordwesten neue wolken mit regen oder schauern aus örtlich sind auch gewitter dabei ."</p>
+                </div>
+                <div class="caption-item">
+                    <span class="lang-tag en">EN</span>
+                    <p>"On Wednesday, new clouds with rain or showers will spread from the northwest; locally there will also be thunderstorms."</p>
                 </div>
             </div>
         </section>
