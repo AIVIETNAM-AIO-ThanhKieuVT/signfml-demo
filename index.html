@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignFML - Project Demo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for GitHub icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">SignFML</div>
         <div class="nav-links">
-            <a href="https://github.com/ThanhKieuVT/slp-vtk" class="code-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ThanhKieuVT/slp-vtk" class="code-link" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fab fa-github" style="font-size: 1.1rem;"></i>
                 Code
             </a>
@@ -35,25 +40,37 @@
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank1_gt.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank1_gt.mp4"></video>
                     </div>
                 </div>
                 <div class="preview-box ours">
                     <span class="label">SIGNFML (OURS)</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank1_signfml.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank1_signfml.mp4"></video>
                     </div>
                 </div>
             </div>
             <div class="captions">
                 <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"guten abend liebe zuschauer ."</p>
+                    <span class="lang-tag de">GER</span>
+                    <div>
+                        <div class="caption-label">Input</div>
+                        <p>"guten abend liebe zuschauer."</p>
+                    </div>
                 </div>
                 <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"Good evening, dear viewers."</p>
+                    <span class="lang-tag en">ENG</span>
+                    <div>
+                        <div class="caption-label">Translation</div>
+                        <p>"Good evening, dear viewers."</p>
+                    </div>
                 </div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric"><span>BLEU-4:</span> <span class="metric-value">1.000</span></div>
+                <div class="metric"><span>DTW-MJE:</span> <span class="metric-value">0.037</span></div>
             </div>
         </section>
 
@@ -63,25 +80,37 @@
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank4_gt.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank4_gt.mp4"></video>
                     </div>
                 </div>
                 <div class="preview-box ours">
                     <span class="label">SIGNFML (OURS)</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank4_signfml.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank4_signfml.mp4"></video>
                     </div>
                 </div>
             </div>
             <div class="captions">
                 <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"und nun die wettervorhersage für morgen dienstag den fünften januar ."</p>
+                    <span class="lang-tag de">GER</span>
+                    <div>
+                        <div class="caption-label">Input</div>
+                        <p>"und nun die wettervorhersage für morgen dienstag den fünften januar."</p>
+                    </div>
                 </div>
                 <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"And now the weather forecast for tomorrow, Tuesday the 5th of January."</p>
+                    <span class="lang-tag en">ENG</span>
+                    <div>
+                        <div class="caption-label">Translation</div>
+                        <p>"And now the weather forecast for tomorrow, Tuesday the 5th of January."</p>
+                    </div>
                 </div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric"><span>BLEU-4:</span> <span class="metric-value">0.742</span></div>
+                <div class="metric"><span>DTW-MJE:</span> <span class="metric-value">0.005</span></div>
             </div>
         </section>
 
@@ -91,25 +120,37 @@
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank5_gt.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank5_gt.mp4"></video>
                     </div>
                 </div>
                 <div class="preview-box ours">
                     <span class="label">SIGNFML (OURS)</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank5_signfml.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank5_signfml.mp4"></video>
                     </div>
                 </div>
             </div>
             <div class="captions">
                 <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"und nun die wettervorhersage für morgen donnerstag den dritten märz ."</p>
+                    <span class="lang-tag de">GER</span>
+                    <div>
+                        <div class="caption-label">Input</div>
+                        <p>"und nun die wettervorhersage für morgen donnerstag den dritten märz."</p>
+                    </div>
                 </div>
                 <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"And now the weather forecast for tomorrow, Thursday the 3rd of March."</p>
+                    <span class="lang-tag en">ENG</span>
+                    <div>
+                        <div class="caption-label">Translation</div>
+                        <p>"And now the weather forecast for tomorrow, Thursday the 3rd of March."</p>
+                    </div>
                 </div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric"><span>BLEU-4:</span> <span class="metric-value">0.699</span></div>
+                <div class="metric"><span>DTW-MJE:</span> <span class="metric-value">0.004</span></div>
             </div>
         </section>
 
@@ -119,55 +160,41 @@
                 <div class="preview-box">
                     <span class="label">GROUND TRUTH</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank2_gt.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank2_gt.mp4"></video>
                     </div>
                 </div>
                 <div class="preview-box ours">
                     <span class="label">SIGNFML (OURS)</span>
                     <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank2_signfml.mp4"></video>
+                        <video autoplay loop muted playsinline webkit-playsinline preload="auto"
+                            src="videos/rank2_signfml.mp4"></video>
                     </div>
                 </div>
             </div>
             <div class="captions">
                 <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"und nun die wettervorhersage für morgen montag den achtundzwanzigsten november ."</p>
+                    <span class="lang-tag de">GER</span>
+                    <div>
+                        <div class="caption-label">Input</div>
+                        <p>"und nun die wettervorhersage für morgen montag den achtundzwanzigsten november."</p>
+                    </div>
                 </div>
                 <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"And now the weather forecast for tomorrow, Monday the 28th of November."</p>
+                    <span class="lang-tag en">ENG</span>
+                    <div>
+                        <div class="caption-label">Translation</div>
+                        <p>"And now the weather forecast for tomorrow, Monday the 28th of November."</p>
+                    </div>
                 </div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric"><span>BLEU-4:</span> <span class="metric-value">0.535</span></div>
+                <div class="metric"><span>DTW-MJE:</span> <span class="metric-value">0.032</span></div>
             </div>
         </section>
 
-        <!-- #5 — BLEU 0.028, DTW 0.036 -->
-        <section class="demo-card animate-up delay-1">
-            <div class="card-grid">
-                <div class="preview-box">
-                    <span class="label">GROUND TRUTH</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank3_gt.mp4"></video>
-                    </div>
-                </div>
-                <div class="preview-box ours">
-                    <span class="label">SIGNFML (OURS)</span>
-                    <div class="media-container">
-                        <video autoplay loop muted playsinline webkit-playsinline preload="auto" src="videos/rank3_signfml.mp4"></video>
-                    </div>
-                </div>
-            </div>
-            <div class="captions">
-                <div class="caption-item">
-                    <span class="lang-tag de">DE</span>
-                    <p>"am mittwoch breiten sich von nordwesten neue wolken mit regen oder schauern aus örtlich sind cũng gewitter dabei ."</p>
-                </div>
-                <div class="caption-item">
-                    <span class="lang-tag en">EN</span>
-                    <p>"On Wednesday, new clouds with rain or showers will spread from the northwest; locally there will also be thunderstorms."</p>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <footer class="footer">
@@ -185,4 +212,5 @@
         document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
     </script>
 </body>
+
 </html>
