@@ -204,7 +204,8 @@ body {
 }
 
 .ours .media-container video {
-    filter: contrast(1.25) saturate(1.3) brightness(0.95);
+    filter: contrast(1.25) saturate(1.3);
+    mix-blend-mode: multiply;
 }
 
 /* ===== Captions — stacked and centered ===== */
